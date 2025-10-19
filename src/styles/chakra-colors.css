@@ -1,0 +1,346 @@
+/* 
+ * Chakra-Inspired Color System for Modern Life
+ * Subtle integration maintaining professional aesthetic
+ */
+
+:root {
+  /* Base Brand Colors (maintain existing) */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+
+  /* ═══════════════════════════════════════ */
+  /* CHAKRA COLOR SYSTEM - Subtle Integration */
+  /* ═══════════════════════════════════════ */
+
+  /* 1. ROOT CHAKRA - Nutrition Hub */
+  --chakra-root-primary: #dc2626;      /* red-600 */
+  --chakra-root-light: #fef2f2;        /* red-50 */
+  --chakra-root-medium: #fecaca;       /* red-200 */
+  --chakra-root-accent: #ef4444;       /* red-500 */
+  --chakra-root-dark: #991b1b;         /* red-800 */
+
+  /* 2. SACRAL CHAKRA - Childcare Hub */
+  --chakra-sacral-primary: #ea580c;    /* orange-600 */
+  --chakra-sacral-light: #fff7ed;      /* orange-50 */
+  --chakra-sacral-medium: #fed7aa;     /* orange-200 */
+  --chakra-sacral-accent: #f97316;     /* orange-500 */
+  --chakra-sacral-dark: #9a3412;       /* orange-800 */
+
+  /* 3. SOLAR PLEXUS CHAKRA - Study Hub */
+  --chakra-solar-primary: #ca8a04;     /* yellow-600 */
+  --chakra-solar-light: #fefce8;       /* yellow-50 */
+  --chakra-solar-medium: #fef08a;      /* yellow-200 */
+  --chakra-solar-accent: #eab308;      /* yellow-500 */
+  --chakra-solar-dark: #854d0e;        /* yellow-800 */
+
+  /* 4. HEART CHAKRA - Meditation Hub */
+  --chakra-heart-primary: #16a34a;     /* green-600 */
+  --chakra-heart-light: #f0fdf4;       /* green-50 */
+  --chakra-heart-medium: #bbf7d0;      /* green-200 */
+  --chakra-heart-accent: #22c55e;      /* green-500 */
+  --chakra-heart-dark: #166534;        /* green-800 */
+
+  /* 5. THROAT CHAKRA - Schedule Hub */
+  --chakra-throat-primary: #2563eb;    /* blue-600 */
+  --chakra-throat-light: #eff6ff;      /* blue-50 */
+  --chakra-throat-medium: #bfdbfe;     /* blue-200 */
+  --chakra-throat-accent: #3b82f6;     /* blue-500 */
+  --chakra-throat-dark: #1e40af;       /* blue-800 */
+
+  /* 6. THIRD EYE CHAKRA - Sleep Hub */
+  --chakra-thirdeye-primary: #7c3aed;  /* violet-600 */
+  --chakra-thirdeye-light: #faf5ff;    /* violet-50 */
+  --chakra-thirdeye-medium: #ddd6fe;   /* violet-200 */
+  --chakra-thirdeye-accent: #8b5cf6;   /* violet-500 */
+  --chakra-thirdeye-dark: #5b21b6;     /* violet-800 */
+
+  /* 7. CROWN CHAKRA - Dashboard/Audio/Integration */
+  --chakra-crown-primary: #9333ea;     /* purple-600 */
+  --chakra-crown-light: #faf5ff;       /* purple-50 */
+  --chakra-crown-medium: #e9d5ff;      /* purple-200 */
+  --chakra-crown-accent: #a855f7;      /* purple-500 */
+  --chakra-crown-dark: #6b21a8;        /* purple-800 */
+  --chakra-crown-gold: #fbbf24;        /* amber-400 for crown accent */
+
+  /* ═══════════════════════════════════════ */
+  /* HUB-SPECIFIC THEME VARIABLES */
+  /* ═══════════════════════════════════════ */
+
+  /* Nutrition Hub Theme */
+  --nutrition-primary: var(--chakra-root-primary);
+  --nutrition-bg: var(--chakra-root-light);
+  --nutrition-border: var(--chakra-root-medium);
+  --nutrition-accent: var(--chakra-root-accent);
+
+  /* Childcare Hub Theme */
+  --childcare-primary: var(--chakra-sacral-primary);
+  --childcare-bg: var(--chakra-sacral-light);
+  --childcare-border: var(--chakra-sacral-medium);
+  --childcare-accent: var(--chakra-sacral-accent);
+
+  /* Study Hub Theme */
+  --study-primary: var(--chakra-solar-primary);
+  --study-bg: var(--chakra-solar-light);
+  --study-border: var(--chakra-solar-medium);
+  --study-accent: var(--chakra-solar-accent);
+
+  /* Meditation Hub Theme */
+  --meditation-primary: var(--chakra-heart-primary);
+  --meditation-bg: var(--chakra-heart-light);
+  --meditation-border: var(--chakra-heart-medium);
+  --meditation-accent: var(--chakra-heart-accent);
+
+  /* Schedule Hub Theme */
+  --schedule-primary: var(--chakra-throat-primary);
+  --schedule-bg: var(--chakra-throat-light);
+  --schedule-border: var(--chakra-throat-medium);
+  --schedule-accent: var(--chakra-throat-accent);
+
+  /* Sleep Hub Theme */
+  --sleep-primary: var(--chakra-thirdeye-primary);
+  --sleep-bg: var(--chakra-thirdeye-light);
+  --sleep-border: var(--chakra-thirdeye-medium);
+  --sleep-accent: var(--chakra-thirdeye-accent);
+
+  /* Audio/Templates/Dashboard Theme */
+  --crown-primary: var(--chakra-crown-primary);
+  --crown-bg: var(--chakra-crown-light);
+  --crown-border: var(--chakra-crown-medium);
+  --crown-accent: var(--chakra-crown-accent);
+}
+
+/* ═══════════════════════════════════════ */
+/* UTILITY CLASSES FOR CHAKRA THEMING */
+/* ═══════════════════════════════════════ */
+
+/* Nutrition/Root Chakra */
+.chakra-nutrition {
+  --hub-primary: var(--nutrition-primary);
+  --hub-bg: var(--nutrition-bg);
+  --hub-border: var(--nutrition-border);
+  --hub-accent: var(--nutrition-accent);
+}
+
+/* Childcare/Sacral Chakra */
+.chakra-childcare {
+  --hub-primary: var(--childcare-primary);
+  --hub-bg: var(--childcare-bg);
+  --hub-border: var(--childcare-border);
+  --hub-accent: var(--childcare-accent);
+}
+
+/* Study/Solar Plexus Chakra */
+.chakra-study {
+  --hub-primary: var(--study-primary);
+  --hub-bg: var(--study-bg);
+  --hub-border: var(--study-border);
+  --hub-accent: var(--study-accent);
+}
+
+/* Meditation/Heart Chakra */
+.chakra-meditation {
+  --hub-primary: var(--meditation-primary);
+  --hub-bg: var(--meditation-bg);
+  --hub-border: var(--meditation-border);
+  --hub-accent: var(--meditation-accent);
+}
+
+/* Schedule/Throat Chakra */
+.chakra-schedule {
+  --hub-primary: var(--schedule-primary);
+  --hub-bg: var(--schedule-bg);
+  --hub-border: var(--schedule-border);
+  --hub-accent: var(--schedule-accent);
+}
+
+/* Sleep/Third Eye Chakra */
+.chakra-sleep {
+  --hub-primary: var(--sleep-primary);
+  --hub-bg: var(--sleep-bg);
+  --hub-border: var(--sleep-border);
+  --hub-accent: var(--sleep-accent);
+}
+
+/* Dashboard/Crown Chakra */
+.chakra-crown {
+  --hub-primary: var(--crown-primary);
+  --hub-bg: var(--crown-bg);
+  --hub-border: var(--crown-border);
+  --hub-accent: var(--crown-accent);
+}
+
+/* ═══════════════════════════════════════ */
+/* COMPONENT THEMING */
+/* ═══════════════════════════════════════ */
+
+/* Hub Header Cards */
+.hub-header {
+  background: linear-gradient(135deg, var(--hub-bg) 0%, var(--hub-border) 100%);
+  border-color: var(--hub-border);
+}
+
+.hub-header-text {
+  color: var(--hub-primary);
+}
+
+/* Hub Cards */
+.hub-card {
+  border-left: 4px solid var(--hub-primary);
+}
+
+.hub-card:hover {
+  border-left-color: var(--hub-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hub Badges */
+.hub-badge {
+  background-color: var(--hub-bg);
+  color: var(--hub-primary);
+  border: 1px solid var(--hub-border);
+}
+
+/* Hub Icons */
+.hub-icon {
+  color: var(--hub-primary);
+}
+
+.hub-icon-bg {
+  background-color: var(--hub-bg);
+  color: var(--hub-primary);
+}
+
+/* Hub Progress Bars */
+.hub-progress {
+  background-color: var(--hub-bg);
+}
+
+.hub-progress-fill {
+  background-color: var(--hub-primary);
+}
+
+/* Hub Buttons */
+.hub-button-primary {
+  background-color: var(--hub-primary);
+  border-color: var(--hub-primary);
+  color: white;
+}
+
+.hub-button-primary:hover {
+  background-color: var(--hub-accent);
+  border-color: var(--hub-accent);
+}
+
+.hub-button-outline {
+  border-color: var(--hub-border);
+  color: var(--hub-primary);
+}
+
+.hub-button-outline:hover {
+  background-color: var(--hub-bg);
+  border-color: var(--hub-primary);
+}
+
+/* ═══════════════════════════════════════ */
+/* SIDEBAR NAVIGATION CHAKRA INDICATORS */
+/* ═══════════════════════════════════════ */
+
+/* Subtle chakra dot indicator on active nav items */
+.nav-item[data-hub="meditation"].active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 24px;
+  background-color: var(--chakra-heart-primary);
+  border-radius: 0 4px 4px 0;
+}
+
+.nav-item[data-hub="sleep"].active::before {
+  background-color: var(--chakra-thirdeye-primary);
+}
+
+.nav-item[data-hub="schedule"].active::before {
+  background-color: var(--chakra-throat-primary);
+}
+
+.nav-item[data-hub="nutrition"].active::before {
+  background-color: var(--chakra-root-primary);
+}
+
+.nav-item[data-hub="childcare"].active::before {
+  background-color: var(--chakra-sacral-primary);
+}
+
+.nav-item[data-hub="study"].active::before {
+  background-color: var(--chakra-solar-primary);
+}
+
+/* ═══════════════════════════════════════ */
+/* CHAKRA ENERGY GRADIENT (Optional) */
+/* ═══════════════════════════════════════ */
+
+.chakra-flow-gradient {
+  background: linear-gradient(
+    180deg,
+    var(--chakra-root-primary) 0%,
+    var(--chakra-sacral-primary) 16.66%,
+    var(--chakra-solar-primary) 33.33%,
+    var(--chakra-heart-primary) 50%,
+    var(--chakra-throat-primary) 66.66%,
+    var(--chakra-thirdeye-primary) 83.33%,
+    var(--chakra-crown-primary) 100%
+  );
+}
+
+/* Subtle chakra glow effect */
+.chakra-glow {
+  box-shadow: 0 0 20px rgba(var(--hub-primary), 0.15);
+}
+
+/* ═══════════════════════════════════════ */
+/* ACCESSIBILITY & CONTRAST */
+/* ═══════════════════════════════════════ */
+
+/* Ensure text remains readable on chakra backgrounds */
+.chakra-text-on-light {
+  color: var(--slate-900);
+}
+
+.chakra-text-on-primary {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ═══════════════════════════════════════ */
+/* PRINT STYLES (maintain professionalism) */
+/* ═══════════════════════════════════════ */
+
+@media print {
+  .chakra-nutrition,
+  .chakra-childcare,
+  .chakra-study,
+  .chakra-meditation,
+  .chakra-schedule,
+  .chakra-sleep,
+  .chakra-crown {
+    --hub-primary: var(--slate-700);
+    --hub-bg: var(--slate-50);
+    --hub-border: var(--slate-200);
+  }
+}
